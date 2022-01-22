@@ -1,0 +1,83 @@
+#loading{
+  background-color: #4e5a61;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+#cuadro{
+  width: 60px;
+  height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #4e5a61;
+  position: absolute;
+}
+
+.cuadroanimation{
+  animation-name: cubo;
+  animation-duration: 5s;
+}
+
+@keyframes cubo {
+  0%{
+    background-color: #4e5a61;
+    left: 50%;
+    top: 0;
+  }
+  10%{
+    background-color: #5f6c75;
+  }
+  20%{
+    background-color: #c8d2dc;
+  }
+  30%{
+    background-color: #b9c3cd;
+  }
+  40%{
+    background-color: #97d57e;
+  }
+  50%{
+    background-color: #d19a75;
+    transform: scale(1);
+    transform: rotate(00deg);
+    top: 50%;
+    left: 50%;
+  }
+  60%{
+    top: 50%;
+    left: 50%;
+    background-color: #d19a75;
+    transform: rotate(40deg);
+  }
+  70%{
+    top: 50%;
+    left: 50%;
+    background-color: #b9c3cd;
+    transform: rotate(-40deg);
+  }
+  80%{
+    top: 50%;
+    left: 50%;
+    background-color: #97d57e;
+    transform: rotate(0deg);
+  }
+  90%{
+    top: 50%;
+    left: 50%;
+    transform: scale(3);
+    background-color: #97d57e00;
+  }
+  90.01%{
+    top: 50%;
+    left: 50%;
+    transform: scale(1);
+    background-color: #5f6c75;
+  }
+  100%{
+    top: 50%;
+    left: 50%;
+    transform: scale(3);
+    background-color: #5f6c7500;
+  }
+}

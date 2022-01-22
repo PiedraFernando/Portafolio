@@ -31,5 +31,8 @@ function openProyect(cityName) {
         console.log(x[i])
     }
     document.getElementById(cityName+"Li").classList.add("folderSelected");
-
 }
+setTimeout(() => {
+    let loader = document.getElementById('loading')
+    loader.style.display = 'none'
+}, 5000);
